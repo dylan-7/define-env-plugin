@@ -1,6 +1,6 @@
 # define-env-plugin
 
-Extended webpack env
+Enable client code to get node variables
 
 ## Installation
 ```

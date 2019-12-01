@@ -1,7 +1,7 @@
 {
   "name": "define-env-plugin",
   "version": "0.1.0",
-  "description": "define-env-plugin",
+  "description": "Enable client code to get node variables",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
