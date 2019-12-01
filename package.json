@@ -1,6 +1,6 @@
 {
   "name": "define-env-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Enable client code to get node variables",
   "main": "index.js",
   "scripts": {
