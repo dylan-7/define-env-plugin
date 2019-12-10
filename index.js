@@ -12,12 +12,13 @@ function crossFields(keys) {
     return definitions;
   }
 
-  var keys = ['NODE_ENV', 'SERVICE_URL'].concat(keys);
+  var keys = ['NODE_ENV', 'SERVICE_URL', 'SOCKET_URL'].concat(keys);
 
   keys.forEach(function(item, index) {
     if (process.env[item]) {
       definitions[item] = JSON.stringify(process.env[item]);
     } else if (item !== undefined) {
+      // item is required
       console.log('⚠️ ' + item + ' is undefined in scripts');
     }
   });

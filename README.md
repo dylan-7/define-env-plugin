@@ -42,4 +42,6 @@ Available options are:
 
 NODE_ENV (string): environment for browser.
 
-SERVICE_URL (string): url for api.
+SERVICE_URL (string): http url for api.
+
+SOCKET_URL (string): websocket url for api.
