@@ -1,5 +1,6 @@
 /**
  * @author dylan
+ * @description Pass in the params, and the setting params in scripts will take effect
  */
 
 var webpack = require('webpack');
@@ -17,7 +18,7 @@ function crossFields(keys) {
   keys.forEach(function(item, index) {
     if (process.env[item]) {
       definitions[item] = JSON.stringify(process.env[item]);
-    } else if (item !== undefined) {
+    } else if ((item !== 'NODE_ENV' && item !== 'SERVICE_URL' && item !== 'SOCKET_URL') && item !== undefined) {
       // item is required
       console.log('⚠️ ' + item + ' is undefined in scripts');
     }
